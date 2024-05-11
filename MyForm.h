@@ -14,6 +14,7 @@ namespace ProjetPOOGRP7 {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace System::Configuration;
 	
 
 	/// <summary>
@@ -1117,7 +1118,11 @@ private: System::Windows::Forms::DataGridViewImageColumn^ dataGridViewImageColum
 		
 	}
 	SqlCommand^ cm = gcnew SqlCommand();
-	SqlConnection^ con = gcnew SqlConnection("Data Source = LAPTOP-6RJGB3RI\\MSSQL_LUC; Initial Catalog = POO_GRP7; Integrated Security = True; User ID = CNX; Password = cesi123");
+
+	ConnectionStringSettings^ connectionStringSettings = ConfigurationManager::ConnectionStrings["DefaultConnectionString"];
+	String^ connectionString = connectionStringSettings->ConnectionString;
+
+	SqlConnection^ con = gcnew SqlConnection(connectionString);
 	SqlDataReader^ dr;
 private: Void LoadItem()
 	{

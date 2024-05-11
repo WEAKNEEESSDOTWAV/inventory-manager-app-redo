@@ -329,5 +329,14 @@
     <ClInclude Include="Ctrl_Addresses.h">
       <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="dbConnect.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
 </Project>

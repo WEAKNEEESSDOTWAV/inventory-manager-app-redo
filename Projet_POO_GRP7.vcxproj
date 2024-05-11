@@ -85,6 +85,9 @@
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>WinMain</EntryPointSymbol>
     </Link>
+    <PostBuildEvent>
+      <Command>copy app.config "$(TargetPath).config"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -115,6 +118,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -203,6 +207,9 @@
     <EmbeddedResource Include="UserLogin.resx">
       <DependentUpon>UserLogin.h</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
