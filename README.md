@@ -1,1 +1,1 @@
-# inventory-manager-app-redo
+# Projet_POO_GRP7

@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de Mappage">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de Services">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Forms">
+      <UniqueIdentifier>{f78c3224-9afe-4075-a073-246119ba281c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms\Fichiers d%27en-tête">
+      <UniqueIdentifier>{8b121a80-8bac-45b0-b0c6-54f9513ae618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms\Fichiers source">
+      <UniqueIdentifier>{a9978ef6-939b-4039-9dc6-d4b6187e7212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers de Mappage\Fichiers d%27en-tête">
+      <UniqueIdentifier>{1da2ac19-b1ea-4bde-85eb-946b43ea9c79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers de Mappage\Fichiers source">
+      <UniqueIdentifier>{2c1d8cff-4283-42ed-9951-e01f265301fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers de Services\Fichiers d%27en-tête">
+      <UniqueIdentifier>{5e530852-46a8-415c-951a-b5e608cd549c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers de Services\Fichiers source">
+      <UniqueIdentifier>{78058b5e-3ff8-4026-a29f-96ff03f7e54e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CLAddresses.cpp">
+      <Filter>Fichiers de Mappage\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="CLCity.cpp">
+      <Filter>Fichiers de Mappage\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="CLColors.cpp">
+      <Filter>Fichiers de Mappage\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="CLCustomer.cpp">
+      <Filter>Fichiers de Mappage\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEmployee.cpp">
+      <Filter>Fichiers de Mappage\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="CLItems.cpp">
+      <Filter>Fichiers de Mappage\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="CLMean_of_payment.cpp">
+      <Filter>Fichiers de Mappage\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="CLMilestone_payments.cpp">
+      <Filter>Fichiers de Mappage\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="CLOrders.cpp">
+      <Filter>Fichiers de Mappage\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="CLOrders_line.cpp">
+      <Filter>Fichiers de Mappage\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="CLPeople.cpp">
+      <Filter>Fichiers de Mappage\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="CLColor_discount.cpp">
+      <Filter>Fichiers de Mappage\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="CLQuantity_discount.cpp">
+      <Filter>Fichiers de Mappage\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="DbConnect.cpp">
+      <Filter>Fichiers de Mappage\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="UserLogin.cpp">
+      <Filter>Forms\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomerAddForm.cpp">
+      <Filter>Forms\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="dbConnect.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CLCustomer.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEmployee.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CLPeople.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CLAddresses.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CLCity.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CLOrders.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CLMilestone_payments.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CLOrders_line.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CLItems.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CLMean_of_payment.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CLColors.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CLColor_discount.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CLquantity_discount.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="MyForm.cpp">
+      <Filter>Forms\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="AddressAddForm.cpp">
+      <Filter>Forms\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemAddForm.cpp">
+      <Filter>Forms\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrl_Addresses.cpp">
+      <Filter>Fichiers de Services\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrl_Customers.cpp">
+      <Filter>Fichiers de Services\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrl_Employee.cpp">
+      <Filter>Fichiers de Services\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrl_Items.cpp">
+      <Filter>Fichiers de Services\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrl_Orders.cpp">
+      <Filter>Fichiers de Services\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="CLmaps.cpp">
+      <Filter>Fichiers de Mappage\Fichiers source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UserLogin.h">
+      <Filter>Forms\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLAddresses.h">
+      <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLCity.h">
+      <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLColors.h">
+      <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLCustomer.h">
+      <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEmployee.h">
+      <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLItems.h">
+      <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLMean_of_payment.h">
+      <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLMilestone_payments.h">
+      <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLOrders.h">
+      <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLOrders_line.h">
+      <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLPeople.h">
+      <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLColor_discount.h">
+      <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLQuantity_discount.h">
+      <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="DbConnect.h">
+      <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomerAddForm.h">
+      <Filter>Forms\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="AddressAddForm.h">
+      <Filter>Forms\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="dbConnect.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLCustomer.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEmployee.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLPeople.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLAddresses.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLCity.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLOrders.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLMilestone_payments.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLOrders_line.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLItems.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLMean_of_payment.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLColors.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLColor_discount.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CLquantity_discount.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="dbConnect.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="dbConnect.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="MyForm.h">
+      <Filter>Forms\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="dbConnect.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="dbConnect.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrl_Customers.h">
+      <Filter>Fichiers de Services\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrl_Employee.h">
+      <Filter>Fichiers de Services\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrl_Items.h">
+      <Filter>Fichiers de Services\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrl_Orders.h">
+      <Filter>Fichiers de Services\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="dbConnect.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="dbConnect.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="dbConnect.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="dbConnect.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemAddForm.h">
+      <Filter>Forms\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="CLmaps.h">
+      <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrl_Addresses.h">
+      <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
