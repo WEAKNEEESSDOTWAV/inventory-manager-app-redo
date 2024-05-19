@@ -165,12 +165,10 @@
     <ClInclude Include="CustomerAddForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="DbConnect.h" />
     <ClInclude Include="Ctrl_Customers.h" />
     <ClInclude Include="Ctrl_Employee.h" />
     <ClInclude Include="Ctrl_Items.h" />
     <ClInclude Include="Ctrl_Orders.h" />
-    <ClInclude Include="dbConnect.h" />
     <ClInclude Include="CLCity.h" />
     <ClInclude Include="CLOrders_line.h" />
     <ClInclude Include="CLCustomer.h" />
@@ -179,6 +177,7 @@
     <ClInclude Include="CLMilestone_payments.h" />
     <ClInclude Include="CLOrders.h" />
     <ClInclude Include="CLPeople.h" />
+    <ClInclude Include="dbConnect.h" />
     <ClInclude Include="ItemAddForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>

@@ -1,15 +1,16 @@
 #pragma once
+#include "pch.h"
 
-namespace NS_Models{
+namespace NS_Models {
 	ref class dbConnect
 	{
 	private:
-		System::String^ sSql;
-		System::String^ sCnx;
-		System::Data::SqlClient::SqlConnection^ oCnx;
-		System::Data::SqlClient::SqlCommand^ oCmd;
-		System::Data::SqlClient::SqlDataAdapter^ oDA;
-		System::Data::DataSet^ oDs;
+		System::String^ queryString;
+		System::String^ connectionString;
+		System::Data::SqlClient::SqlConnection^ connection;
+		System::Data::SqlClient::SqlCommand^ command;
+		System::Data::SqlClient::SqlDataAdapter^ adapter;
+		System::Data::DataSet^ dataSet;
 	public:
 		dbConnect(void);
 		System::Data::DataSet^ getRows(System::String^, System::String^);

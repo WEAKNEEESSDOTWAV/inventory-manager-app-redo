@@ -1,33 +1,37 @@
 #include "dbConnect.h"
+
+using namespace System::Configuration;
+
 NS_Models::dbConnect::dbConnect(void)
 {
-	this->sCnx = "Data Source=LAPTOP-6RJGB3RI\\MSSQL_LUC;Initial Catalog=POO_GRP7;Integrated Security=True;User ID = CNX; Password = cesi123";
+	ConnectionStringSettings^ connectionStringSettings = ConfigurationManager::ConnectionStrings["DefaultConnectionString"];
+	this->connectionString = connectionStringSettings->ConnectionString;
 
-	this->sSql = "Rien";
+	this->queryString = "";
 
-	this->oCnx = gcnew System::Data::SqlClient::SqlConnection(this->sCnx);
-	this->oCmd = gcnew System::Data::SqlClient::SqlCommand(this->sSql, this->oCnx);
-	this->oDA = gcnew System::Data::SqlClient::SqlDataAdapter();
-	this->oDs = gcnew System::Data::DataSet();
+	this->connection = gcnew System::Data::SqlClient::SqlConnection(this->connectionString);
+	this->command = gcnew System::Data::SqlClient::SqlCommand(this->queryString, this->connection);
+	this->adapter = gcnew System::Data::SqlClient::SqlDataAdapter();
+	this->dataSet = gcnew System::Data::DataSet();
 
-	this->oCmd->CommandType = System::Data::CommandType::Text;
+	this->command->CommandType = System::Data::CommandType::Text;
 }
-System::Data::DataSet^ NS_Models::dbConnect::getRows(System::String^ sqlRequest, System::String^ sDataTableName)
+System::Data::DataSet^ NS_Models::dbConnect::getRows(System::String^ queryString, System::String^ tableName)
 {
-	this->oDs->Clear();
-	this->sSql = sqlRequest;
-	this->oCmd->CommandText = this->sSql;
-	this->oDA->SelectCommand = this->oCmd;
-	this->oDA->Fill(this->oDs, "sDataTableName");
+	this->dataSet->Clear();
+	this->queryString = queryString;
+	this->command->CommandText = this->queryString;
+	this->adapter->SelectCommand = this->command;
+	this->adapter->Fill(this->dataSet, tableName);
 
-	return this->oDs;
+	return this->dataSet;
 }
 void NS_Models::dbConnect::actionRows(System::String^ sSql)
 {
-	this->sSql = sSql;
-	this->oCmd->CommandText = this->sSql;
-	this->oDA->SelectCommand = this->oCmd;
-	this->oCnx->Open();
-	this->oCmd->ExecuteNonQuery();
-	this->oCnx->Close();
+	this->queryString = sSql;
+	this->command->CommandText = this->queryString;
+	this->adapter->SelectCommand = this->command;
+	this->connection->Open();
+	this->command->ExecuteNonQuery();
+	this->connection->Close();
 }

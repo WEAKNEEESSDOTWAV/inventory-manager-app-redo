@@ -1,5 +1,5 @@
 #pragma once
-#include "DbConnect.h"
+#include "dbConnect.h"
 
 #include "Ctrl_Employee.h"
 
@@ -11,19 +11,20 @@ namespace ProjetPOOGRP7 {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace System::Security;
+	using namespace InventoryManagerApp::Presenters;
 
 	/// <summary>
 	/// Description résumée de UserLogin
 	/// </summary>
 	public ref class UserLogin : public System::Windows::Forms::Form
 	{
+
 	public:
 		UserLogin(void)
 		{
 			InitializeComponent();
-			//
-			//TODO: ajoutez ici le code du constructeur
-			//
+			this->loginPresenter = gcnew LoginPresenter(this);
 		}
 
 	protected:
@@ -37,11 +38,38 @@ namespace ProjetPOOGRP7 {
 				delete components;
 			}
 		}
-	private: NS_Ctrl::Ctrl_Employee^ oSvc;
-		   NS_Models::dbConnect^ cad;
-		   System::Data::DataSet^ oDs;
+
+	private:
+
+		/*String^ email;
+		SecureString^ password;*/
+		LoginPresenter loginPresenter;
+
+	public:
+
+		property String^ Email
+		{
+			String^ get()
+			{
+				return this->email_textBox->Text;
+			}
+		}
+
+		property SecureString^ Password
+		{
+			SecureString^ get()
+			{
+				SecureString^ securePassword;
+				for each (wchar_t c in this->pswdTextBox->Text)
+				{
+					securePassword->AppendChar(c);
+				}
+				securePassword->MakeReadOnly();
+				return securePassword;
+			}
+		}
+
 	private: System::Windows::Forms::Label^ email_label;
-	protected:
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::TextBox^ email_textBox;
 	private: System::Windows::Forms::TextBox^ pswdTextBox;
@@ -150,26 +178,21 @@ namespace ProjetPOOGRP7 {
 
 		}
 #pragma endregion
-	private: System::Void Login_button_Click(System::Object^ sender, System::EventArgs^ e) {
-		//this->oDs = this->oSvc->selectConnection("rsl", this->email_textBox->Text, this->pswdTextBox->Text);
-		//if (this->oDs->Tables["rsl"]->Rows->Count == 0)
-		//{
-		//	this->label2->Text = "L'identifiant et/ou le mot de passe est incorrect.";
-		//	this->pswdTextBox->Clear();
-		//}
-		//else
-		//{
+	private:
+		System::Void Login_button_Click(System::Object^ sender, System::EventArgs^ e) {
+
+			//this->oDs = this->oSvc->selectConnection("rsl", this->email_textBox->Text, this->pswdTextBox->Text);
+			//if (this->oDs->Tables["rsl"]->Rows->Count == 0)
+			//{
+			//	this->label2->Text = "L'identifiant et/ou le mot de passe est incorrect.";
+			//	this->pswdTextBox->Clear();
+			//}
+			//else
+			//{
 			this->DialogResult = System::Windows::Forms::DialogResult::OK;
 			this->Close();
-		//}
-
-		
-		
-
-
-	}
-
-
+			//}
+		}
 
 	};
 };

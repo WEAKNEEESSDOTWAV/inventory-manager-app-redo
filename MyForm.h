@@ -26,10 +26,6 @@ namespace ProjetPOOGRP7 {
 		MyForm(void)
 		{
 			InitializeComponent();
-			
-			//
-			//TODO: ajoutez ici le code du constructeur
-			//
 		}
 
 	protected:
@@ -145,19 +141,6 @@ private: System::Windows::Forms::TextBox^ priceItem_text;
 
 private: System::Windows::Forms::Button^ button1;
 private: System::Windows::Forms::TextBox^ quantityItem_text;
-
-
-
-
-
-
-
-
-
-
-
-
-
 private: System::Windows::Forms::Label^ label16;
 private: System::Windows::Forms::DataGridView^ dgvProduct;
 private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column1;
@@ -176,126 +159,6 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ dataGridViewTextBoxC
 private: System::Windows::Forms::DataGridViewTextBoxColumn^ dataGridViewTextBoxColumn4;
 private: System::Windows::Forms::DataGridViewImageColumn^ dataGridViewImageColumn1;
 private: System::Windows::Forms::DataGridViewImageColumn^ dataGridViewImageColumn2;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	protected:
-
-
-
-
-
-
-
-	protected:
-
-	protected:
-
 	private:
 		/// <summary>
 		/// Variable n�cessaire au concepteur.
