@@ -34,6 +34,12 @@
     <Filter Include="Fichiers de Services\Fichiers source">
       <UniqueIdentifier>{78058b5e-3ff8-4026-a29f-96ff03f7e54e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{e5f46e8b-a919-44e8-9f80-0c7b95180dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Repositories">
+      <UniqueIdentifier>{57743c47-7c90-466a-aa50-e596aed7abf1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CLAddresses.cpp">
@@ -153,6 +159,15 @@
     <ClCompile Include="CLmaps.cpp">
       <Filter>Fichiers de Mappage\Fichiers source</Filter>
     </ClCompile>
+    <ClCompile Include="Presenters\LoginPresenter.cpp">
+      <Filter>Fichiers de Services\Fichiers source</Filter>
+    </ClCompile>
+    <ClCompile Include="Presenters\IConnectionView.cpp">
+      <Filter>Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="UserRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UserLogin.h">
@@ -205,9 +220,6 @@
     </ClInclude>
     <ClInclude Include="AddressAddForm.h">
       <Filter>Forms\Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="dbConnect.h">
-      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="CLCustomer.h">
       <Filter>Fichiers d%27en-tête</Filter>
@@ -337,6 +349,18 @@
     </ClInclude>
     <ClInclude Include="dbConnect.h">
       <Filter>Fichiers de Mappage\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="dbConnect.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Fichiers de Mappage</Filter>
+    </ClInclude>
+    <ClInclude Include="Presenters\LoginPresenter.h">
+      <Filter>Fichiers de Services\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="UserRepository.h">
+      <Filter>Repositories</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

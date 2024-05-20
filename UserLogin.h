@@ -1,9 +1,7 @@
 #pragma once
 #include "dbConnect.h"
 
-#include "Ctrl_Employee.h"
-
-namespace ProjetPOOGRP7 {
+namespace InventoryManagerApp {
 
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -17,7 +15,7 @@ namespace ProjetPOOGRP7 {
 	/// <summary>
 	/// Description résumée de UserLogin
 	/// </summary>
-	public ref class UserLogin : public System::Windows::Forms::Form
+	public ref class UserLogin : public System::Windows::Forms::Form, InventoryManagerApp::Interfaces::IConnectionView
 	{
 
 	public:
@@ -181,6 +179,7 @@ namespace ProjetPOOGRP7 {
 	private:
 		System::Void Login_button_Click(System::Object^ sender, System::EventArgs^ e) {
 
+			this->loginPresenter->Login();
 			//this->oDs = this->oSvc->selectConnection("rsl", this->email_textBox->Text, this->pswdTextBox->Text);
 			//if (this->oDs->Tables["rsl"]->Rows->Count == 0)
 			//{
@@ -189,7 +188,7 @@ namespace ProjetPOOGRP7 {
 			//}
 			//else
 			//{
-			this->DialogResult = System::Windows::Forms::DialogResult::OK;
+			//this->DialogResult = System::Windows::Forms::DialogResult::OK;
 			this->Close();
 			//}
 		}

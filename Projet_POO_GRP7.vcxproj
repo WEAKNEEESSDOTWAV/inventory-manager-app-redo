@@ -149,7 +149,10 @@
     <ClCompile Include="CLPeople.cpp" />
     <ClCompile Include="ItemAddForm.cpp" />
     <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="Presenters\IConnectionView.cpp" />
+    <ClCompile Include="Presenters\LoginPresenter.cpp" />
     <ClCompile Include="UserLogin.cpp" />
+    <ClCompile Include="UserRepository.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AddressAddForm.h">
@@ -186,9 +189,11 @@
     </ClInclude>
     <ClInclude Include="pch.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Presenters\LoginPresenter.h" />
     <ClInclude Include="UserLogin.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="UserRepository.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CustomerAddForm.resx">
